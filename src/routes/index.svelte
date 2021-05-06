@@ -1,5 +1,6 @@
 <script>
     import Header from '$lib/Header/index.svelte';
+    import Footer from '$lib/Footer/index.svelte';
 </script>
 
 <title>Gibki Labs - Digital Transformation Agency</title>
@@ -16,7 +17,7 @@
                     <h3 class="text-2xl font-medium mt-4 mb-14">
                         Digital transformation solutions for small businesses.
                     </h3>
-                    <a class="px-5 py-3 bg-gb3 text-gb-white w-64 text-xl rounded-md font-medium shadow-lg text-center self-center md:self-start" href="mailto:hello@gibki.io">
+                    <a class="px-5 py-3 bg-gb3 text-gb5 w-full md:w-64 text-xl rounded-md font-medium shadow-lg text-center self-center md:self-start" href="mailto:hello@gibki.io">
                         contact us
                     </a>
                 </div>
@@ -52,25 +53,12 @@
             </div>
         </div>
     </section>
-    <section class="bg-gb2 flex-col w-full h-80 min-h-full">
-        <div class="container mx-auto px-10">
-        </div>
-    </section>
+    <Footer />
 </main>
 
 <style>
     main {
         color: #242324;
         font-family: 'Poppins'
-    }
-    
-    .text-gb-white {
-        color: #F3F3F8;
-    }
-    .text-gb-black {
-        color: #242324;
-    }
-    .text-gb-accent1 {
-        color: #0AE6B0;
     }
 </style>
