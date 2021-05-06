@@ -6,9 +6,52 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/ico" href="/favicon.ico" />
+		<!-- Primary Meta Tags -->
+		<meta name="title" content="Gibki Labs - Digital Transformation Agency">
+		<meta name="description" content="Scale up and scale forward with Gibki's digital transformation solutions for MSMEs">
+		<meta name="google-site-verification" content="zSOfRRj8UIChHhxBPU7Wma-geWpjhWyUAz1hhbYBAUU" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://gibki.io/">
+		<meta property="og:title" content="Gibki Labs - Digital Transformation Agency">
+		<meta property="og:description" content="Scale up and scale forward with Gibki's digital transformation solutions for MSMEs">
+		<meta property="og:image" content="https://gibki.io/og-image.png">
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://gibki.io/">
+		<meta property="twitter:title" content="Gibki Labs - Digital Transformation Agency">
+		<meta property="twitter:description" content="Scale up and scale forward with Gibki's digital transformation solutions for MSMEs">
+		<meta property="twitter:image" content="">
 		%svelte.head%
 	</head>
 	<body>
 		<div id="svelte">%svelte.body%</div>
+		<!-- Messenger Chat Plugin Code -->
+		<div id="fb-root"></div>
+		<script>
+		  window.fbAsyncInit = function() {
+			FB.init({
+			  xfbml            : true,
+			  version          : 'v10.0'
+			});
+		  };
+  
+		  (function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		  }(document, 'script', 'facebook-jssdk'));
+		</script>
+  
+		<!-- Your Chat Plugin code -->
+		<div class="fb-customerchat"
+		  attribution="page_inbox"
+		  page_id="101193482142997">
+		</div>
 	</body>
 </html>

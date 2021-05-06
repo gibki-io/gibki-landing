@@ -2,59 +2,60 @@
     import Header from '$lib/Header/index.svelte';
 </script>
 
-<head>
-    <title>Gibki Labs - Digital Transformation Agency</title>
-    <link rel="icon" type="image/ico" href="/favicon.ico" />
-</head>
+<title>Gibki Labs - Digital Transformation Agency</title>
 
 <main class="flex flex-col w-full">
-    <section class="bg-gb1 flex flex-col w-full h-screen">
-        <Header />
-        <div class="container mx-auto px-10 mt-32">
-            <h1 class="text-6xl font-semibold max-w-xl font-poppins">
-                Realign. Reinvent. Reimagine.
-            </h1>
-            <h3 class="text-2xl font-medium mt-4 mb-14">
-                Digital transformation solutions for small businesses.
-            </h3>
-            <a class="px-5 py-3 bg-gb3 text-gb-white text-xl rounded-md font-medium shadow-lg" href="mailto:hello@gibki.io">
-                contact us
-            </a>
+    <Header />
+    <section class="bg-gb1 flex flex-col w-full min-h-screen pt-20">
+        <div class="container mx-auto my-auto px-10 pt-20 lg:pt-0 flex flex-col">
+            <div class="flex flex-col md:flex-row justify-between items-center w-full my-auto">
+                <div class="flex flex-col mb-20 max-w-xl">
+                    <h1 class="md:text-6xl text-4xl font-semibold font-poppins">
+                        Realign. Reinvent. Reimagine.
+                    </h1>
+                    <h3 class="text-2xl font-medium mt-4 mb-14">
+                        Digital transformation solutions for small businesses.
+                    </h3>
+                    <a class="px-5 py-3 bg-gb3 text-gb-white w-64 text-xl rounded-md font-medium shadow-lg text-center self-center md:self-start" href="mailto:hello@gibki.io">
+                        contact us
+                    </a>
+                </div>
+                <img
+                    class="md:w-5/12 mb-20 self-center"
+                    src="/index/hero.svg" 
+                    alt="Gibki Architecture"
+                />
+            </div>
         </div>
-        <img
-            class="lg:w-1/2 w-full absolute bottom-0 right-0"
-            src="/index/hero.svg" 
-            alt="Gibki Architecture"
-        />
     </section>
-    <section class="bg-gb3 flex-col w-full h-64">
+    <section class="bg-gb3 flex flex-col w-full min-h-screen">
+        <div class="w-full container mx-auto px-10 pt-20 lg:pt-0 flex my-auto justify-between flex-wrap items-center align-center">
+            <div class="mb-20 w-full lg:w-1/2 mx-auto lg:mx-0 max-w-xl">
+                <h1 class="text-gb5 md:text-5xl text-4xl font-semibold font-poppins">
+                    Tailored solutions for modern businesses
+                </h1>
+                <h3 class="text-gb5 text-2xl font-medium mt-4">
+                    Architected from the ground up to suit your needs
+                </h3>
+            </div>
+            <div class="max-w-md flex-shrink mb-20 mx-auto lg:mx-0">
+                <img src="/index/technologies-3.svg" alt="Integration Technologies" />
+            </div>
+        </div>
+    </section>
+    <section class="bg-gb5 flex flex-col w-full min-h-screen hidden">
+        <div class="container mx-auto px-10 flex my-auto">
+            <div>
+                <h1 class="md:text-5xl text-4xl font-semibold max-w-xl font-poppins">
+                    Cost-effective digital transformation
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gb2 flex-col w-full h-80 min-h-full">
         <div class="container mx-auto px-10">
         </div>
     </section>
-    <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v10.0'
-          });
-        };
-
-        (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-      </script>
-
-      <!-- Your Chat Plugin code -->
-      <div class="fb-customerchat"
-        attribution="page_inbox"
-        page_id="101193482142997">
-      </div>
 </main>
 
 <style>
