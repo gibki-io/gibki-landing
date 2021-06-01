@@ -22,7 +22,7 @@
                     </a>
                 </div>
                 <img
-                    class="md:w-5/12 mb-20 self-center"
+                    class="md:max-w-md mb-20 self-center"
                     src="/index/hero.svg" 
                     alt="Gibki Architecture"
                 />
